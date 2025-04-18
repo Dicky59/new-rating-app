@@ -29,6 +29,12 @@ export default defineConfig([{
         },
 
         parser: babelParser,
+        parserOptions: {
+            requireConfigFile: false,
+            babelOptions: {
+                presets: ["babel-preset-expo"]
+            }
+        }
     },
 
     settings: {
